@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 onclick="alert('nespausk!')">labas</h1>
+
+    <h2 onclick="console.log('eik lauk')">sveikas</h2>
+
+    <h3 onmouseover="spausdink('labas')">auuuuu</h3>
+
+    <p></p>
+    <p class="name"></p>
+
+    <input type="button" value="ok">
+    <input type="button" value="clear">
+
+    <script>
+
+        document.querySelector("input").addEventListener("click", function(){
+            document.querySelector(".name").innerText = "Jamalas";
+        })
+
+        document.querySelector("[value='clear']").addEventListener("click", function(){
+            document.querySelector("p").innerHTML = "";
+            document.querySelector(".name").innerHTML = "";
+        })
+
+        function spausdink(tekstas){
+            document.querySelector("body").append("tu sugebejei");
+            document.querySelectorAll("p")[0].innerText = tekstas;
+            document.querySelectorAll("p")[1].innerText = tekstas;
+        }
+    </script>
+</body>
+</html>

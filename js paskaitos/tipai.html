@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+
+        //skaiciai
+        let firstNumber = 5.2;
+        let secondNumber = 10;
+        console.log(firstNumber + secondNumber);
+
+        let firstNumber1 = "5.2";
+        let secondNumber1 = 10;
+        console.log(firstNumber1 + secondNumber1);
+
+        //tekstas
+        let name = "Jonas";
+        let surname = "jonaitis";
+        console.log(name + " " + surname); // su +
+
+        console.log(name.concat(" ", surname)); // su concat
+
+        // index of
+        let text = "laba diena, grazi diena";
+        let position = text.indexOf("grazi"); // kai grazina -1, reiskias tekste nera ko ieskai
+        console.log(position);
+
+        //substring
+        let newText = text.substring(0, 5);
+        console.log(newText);
+
+        //split
+        let words = text.split(" ");
+        console.log(words);
+
+        //array
+        console.log(words[1]);
+
+        //Boolean
+        let flag = true;
+        if(flag){
+            console.log("flag is true")
+        }
+        else{
+            console.log("flag is false");
+        }
+
+        let flag1 = 5 < 2 ;
+        if(flag1){     
+            console.log("flag is true")
+        }
+        else{
+            console.log("flag is false");
+        }
+
+       // for ciklas 
+       for (let index = 0; index < 5; index++) {
+            console.log(index);           
+       }
+
+
+    </script>
+    
+</body>
+</html>
